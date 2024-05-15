@@ -25,9 +25,11 @@ main {
   margin-top: 0.5rem;
 }
 #submit {
+  width: 10%;
   padding: 0.25rem;
   display: inline;
   margin-left: 1rem;
+  background-color: lightgreen;
 }
 .dayTask {
   margin-top: 3rem;
@@ -35,16 +37,22 @@ main {
 }
 
 .listaNonOrdinata {
+  display: inline-block;
   list-style: none;
-  /* width: 80%;
-  border: 2px solid #c6c6c6; */
-
+  width: 80%;
+  border-bottom: 2px solid #c6c6c6;
+  padding-left: 0.5rem;
   margin-top: 2rem;
   margin-left: 2rem;
+}
+.listaNonOrdinata:hover {
+  border-bottom: 3px solid #c6c6c6;
 }
 .click {
   text-decoration: line-through;
 }
 .btnElimina {
   margin-left: 1rem;
+  width: 10%;
+  background-color: red;
 }

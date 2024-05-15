@@ -13,19 +13,26 @@ form.addEventListener("submit", function (event) {
   const taskValue = taskInput.value;
   console.log(taskValue);
 
+  const unordinaryLi = document.querySelector("ul");
+
+  const contenitoreLi = document.createElement("div");
+
   const li = document.createElement("li");
 
   const btnElimina = document.createElement("button");
+
+  contenitoreLi.appendChild(li);
+  contenitoreLi.appendChild(btnElimina);
+
+  unordinaryLi.append(contenitoreLi);
+
   btnElimina.classList.add("btnElimina");
   btnElimina.innerText = "X";
   li.classList.add("listaNonOrdinata");
   li.innerText = taskValue;
-  li.addEventListener("click", () => li.classList.add("click"));
-  btnElimina.addEventListener("click", () => li.remove());
 
-  const unordinaryLi = document.querySelector("ul");
-  unordinaryLi.append(li);
-  li.append(btnElimina);
+  li.addEventListener("click", () => li.classList.add("click"));
+  btnElimina.addEventListener("click", () => contenitoreLi.remove());
+
   taskInput.value = "";
 });
-// metodo toggle per rendere completo e fare una riga
