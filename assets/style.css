@@ -5,6 +5,13 @@ body {
 main {
   margin-top: 3rem;
 }
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgb(59, 63, 63);
+}
 .container {
   max-width: 50rem;
   margin: 0 auto;
