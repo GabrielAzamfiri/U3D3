@@ -1,0 +1,50 @@
+body {
+  background-color: #7edcd9;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  margin-top: 3rem;
+}
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 30%);
+  padding: 1rem;
+}
+
+.inline {
+  display: inline;
+  margin-left: 2rem;
+}
+#task {
+  width: 80%;
+  border: 2px solid #c6c6c6;
+  padding: 0.25rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+#submit {
+  padding: 0.25rem;
+  display: inline;
+  margin-left: 1rem;
+}
+.dayTask {
+  margin-top: 3rem;
+  min-height: 3rem;
+}
+
+.listaNonOrdinata {
+  list-style: none;
+  /* width: 80%;
+  border: 2px solid #c6c6c6; */
+
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.click {
+  text-decoration: line-through;
+}
+.btnElimina {
+  margin-left: 1rem;
+}
